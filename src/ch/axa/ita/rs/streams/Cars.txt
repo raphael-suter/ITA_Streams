@@ -1,0 +1,6 @@
+11;VW;Golf;blau;85
+16;Porsche;911;silber;325
+19;Smart;ForTwo;silber;72
+23;Fiat;500;weiss;50
+34;Ferrari;Modena;rot;380
+39;Alfa Romeo;Spider;rot;180

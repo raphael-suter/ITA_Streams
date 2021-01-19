@@ -3,6 +3,12 @@ package ch.axa.ita.rs.streams;
 public class Car {
     private static int lastId = 1;
 
+    public static final int USER_ID = 0;
+    public static final int BRAND = 1;
+    public static final int MODEL = 2;
+    public static final int COLOR = 3;
+    public static final int PS = 4;
+
     private int id;
     private String brand;
     private String model;
@@ -17,16 +23,8 @@ public class Car {
         this.ps = ps;
     }
 
-    private static int generateId() {
-        return lastId++;
-    }
-
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getBrand() {
@@ -59,5 +57,14 @@ public class Car {
 
     public void setPs(int ps) {
         this.ps = ps;
+    }
+
+    @Override
+    public String toString() {
+        return id + ", " + brand + ", " + model + ", " + color + ", " + ps;
+    }
+
+    private static int generateId() {
+        return lastId++;
     }
 }
